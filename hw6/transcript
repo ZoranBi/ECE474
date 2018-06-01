@@ -1,0 +1,134 @@
+# //  ModelSim SE-64 10.5 Feb 12 2016 Linux 3.10.0-693.11.1.el7.x86_64
+# //
+# //  Copyright 1991-2016 Mentor Graphics Corporation
+# //  All Rights Reserved.
+# //
+# //  ModelSim SE-64 and its associated documentation contain trade
+# //  secrets and commercial or financial information that are the property of
+# //  Mentor Graphics Corporation and are privileged, confidential,
+# //  and exempt from disclosure under the Freedom of Information Act,
+# //  5 U.S.C. Section 552. Furthermore, this information
+# //  is prohibited from disclosure under the Trade Secrets Act,
+# //  18 U.S.C. Section 1905.
+# //
+# vsim -novopt tb 
+# Start time: 23:43:38 on May 31,2018
+# ** Warning: (vsim-8891) All optimizations are turned off because the -novopt switch is in effect. This will cause your simulation to run very slowly. If you are using this switch to preserve visibility for Debug or PLI features please see the User's Manual section on Preserving Object Visibility with vopt.
+# Refreshing /nfs/stak/users/biz/ECE474/hw6/work.tb
+# Loading sv_std.std
+# Loading work.tb
+# Refreshing /nfs/stak/users/biz/ECE474/hw6/work.tas
+# Loading work.tas
+# Refreshing /nfs/stak/users/biz/ECE474/hw6/work.a5_or_c3
+# Loading work.a5_or_c3
+# Refreshing /nfs/stak/users/biz/ECE474/hw6/work.fifo
+# Loading work.fifo
+# Refreshing /nfs/stak/users/biz/ECE474/hw6/work.avgr
+# Loading work.avgr
+# Refreshing /nfs/stak/users/biz/ECE474/hw6/work.cnt
+# Loading work.cnt
+add wave -position insertpoint sim:/tb/tas_0/*
+run
+# ** Warning: (vsim-3533) [FOFIW] - Failed to open file "vectors/output_data" for writing.
+# No such file or directory. (errno = ENOENT)    : tb.sv(36)
+#    Time: 0 ns  Iteration: 0  Instance: /tb
+# ERROR : Cannot open file output_data
+# ** Warning: (vsim-8315) a5_or_c3.sv(41): No condition is true in the unique/priority if/case statement.
+#    Time: 0 ns  Iteration: 1  Instance: /tb/tas_0/a5_or_c3_0
+# sending: a5
+# sending: 3a
+# sending: 55
+# sending: 43
+# sending: 3c
+# write to RAM:: address: 3ff  data:  67 
+# 
+# sending: a5
+# sending: 0a
+# sending: 14
+# sending: 1e
+# sending: 28
+# write to RAM:: address: 3fe  data:  25 
+# 
+run
+# sending: a5
+# sending: 02
+# sending: 04
+# sending: 06
+run
+# sending: 08
+# sending: c3
+# sending: 0a
+# sending: 0c
+# sending: 0e
+# write to RAM:: address: 3fd  data:   5 
+# 
+# sending: 10
+run
+# sending: a5
+# sending: 12
+# write to RAM:: address: 3fc  data:  14 
+# 
+# sending: 14
+run
+# sending: 16
+# sending: 18
+# sending: c3
+# sending: 1a
+# sending: 1c
+# write to RAM:: address: 3fb  data:  23 
+# 
+# sending: 1e
+# sending: 1f
+run
+# sending: a5
+# sending: 7f
+# sending: 7f
+# sending: 7f
+# sending: 7f
+# write to RAM:: address: 3fa  data:  54 
+# 
+# sending: a5
+# sending: 22
+run
+# sending: 24
+# sending: 26
+# sending: 28
+# sending: c3
+# sending: 2a
+# write to RAM:: address: 3f9  data:  58 
+# 
+# sending: 2c
+run
+# sending: 2e
+# write to RAM:: address: 3f8  data:  43 
+# 
+# sending: 30
+run
+# sending: a5
+# sending: 02
+# sending: 04
+# sending: 06
+run
+# write to RAM:: address: 3f7  data:  15 
+# 
+# sending: 08
+# sending: 83
+# sending: a5
+# sending: c3
+# sending: a5
+# sending: c3
+run
+# sending: a5
+# sending: 12
+# sending: 14
+run
+# sending: 16
+# sending: 18
+# sending: c1
+# sending: a5
+# sending: a5
+# write to RAM:: address: 3f6  data:  17 
+# 
+# sending: c3
+# End time: 23:44:54 on May 31,2018, Elapsed time: 0:01:16
+# Errors: 0, Warnings: 3
