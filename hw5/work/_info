@@ -1,0 +1,58 @@
+m255
+K4
+z2
+13
+!s112 1.1
+!i10d 8192
+!i10e 25
+!i10f 100
+cModel Technology
+Z0 d/nfs/stak/users/biz/ECE474/hw5_1
+vgcd
+Z1 DXx6 sv_std 3 std 0 22 AD7iAPLo6nTIKk<N0eo=D3
+Z2 !s110 1527460893
+!i10b 1
+!s100 N5W_=Yk@W8iOKcX9eNHnP0
+I9778:_hO[P[67QhH]10dC3
+Z3 VDg1SIo80bB@j0V0VzS_@n1
+!s105 gcd_sv_unit
+S1
+R0
+w1526514449
+8gcd.sv
+Fgcd.sv
+L0 9
+Z4 OL;L;10.5;63
+r1
+!s85 0
+31
+Z5 !s108 1527460893.000000
+Z6 !s107 tb.sv|gcd.sv|
+Z7 !s90 gcd.sv|tb.sv|
+!i113 0
+Z8 o-L mtiAvm -L mtiRnm -L mtiOvm -L mtiUvm -L mtiUPF -L infact
+Z9 tCvgOpt 0
+vtb
+R1
+R2
+!i10b 1
+!s100 zoJhUXm7J`TV<:>Bf3G9H2
+IP?U?3NZN@<[n_WRDR4_lK3
+R3
+!s105 tb_sv_unit
+S1
+R0
+w1526512142
+8tb.sv
+Ftb.sv
+L0 3
+R4
+r1
+!s85 0
+31
+R5
+R6
+R7
+!i113 0
+R8
+R9

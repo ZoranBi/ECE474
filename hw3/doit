@@ -1,0 +1,62 @@
+#!/bin/bash
+if [ ! -d work ] ; then
+  echo "­­--> directory work does not exist, creating it now <­­--"
+  vlib work
+fi
+
+#Check if cell libraries have been compiled, using grep
+
+#compiles verilog cell library into local work directory
+
+verilog_file_dir=/nfs/guille/a1/cadlibs/synop_lib/SAED_EDK90nm\/Digital_Standard_Cell_Library/verilog
+echo "Compiling verilog source files in directory: $verilog_file_dir"
+#for verilog_source in 'ls $verilog_file_dir'
+#do
+vlog $verilog_file_dir/* -work work
+#done
+#if not, compile cell libraries (slide 11)
+
+grep -q XOR3X1.v work/_info
+if [ $? -eq 0 ] ; then
+  echo "here"
+fi
+
+if [ -s mult.sv ] ; then
+  echo "vlog mult.sv"
+  vlog mult.sv
+  #runs simulation with a do file and no GUI
+else
+  echo "verilog file missing"
+fi
+
+if [ -s mult.do ] ; then
+  echo "vsim mult"
+  vsim mult -do mult.do -quiet -c +nowarnTFMPC +nowarnTSCALE
+  echo "rename the list file"
+  mv ./mult.list ./mult_sv.list
+else
+  echo "mult.do does not exist"
+fi
+#invoke the simulator, run the simulation, and quit
+#Note1: upon invocation of vsim, use the "-t 1ps" switch to keep timebases consistent.  It defaults to nS.
+#Note2: You will probably get at message: "# Missing signal name or pattern"
+#This can be safely ignored.
+
+#run design_vision here, the script is "syn_mult"
+echo "run dc_shell"
+dc_shell-xg-t -f syn_mult
+
+echo "vlog mult.gate.v"
+vlog mult.gate.v
+
+#run simulation again
+vsim mult -do mult.do -quiet -c +nowarnTFMPC +nowarnTSCALE -t 1ns
+
+#Check for differences in the list filess
+diff mult.list mult_sv.list >| diff_report
+
+if [ ! -s "diff_report" ] ; then
+  echo "HOOARY IT WORKS!"
+else
+  echo "BOO HOO HOO, ITS BROKEN!"
+fi
