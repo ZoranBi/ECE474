@@ -1,0 +1,13 @@
+#!/bin/bash
+if [ ! d work ] ; then
+echo work does not exist, making it
+vlib work
+fi
+
+if [ -s "clock.sv" ] ; then
+vlog *.sv
+#runs simulation with a do file and no GUI
+vsim -novopt clock -t ps -do do.do -quiet
+else
+echo "verilog file missing"
+fi

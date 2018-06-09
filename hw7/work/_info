@@ -1,0 +1,159 @@
+m255
+K4
+z2
+13
+!s112 1.1
+!i10d 8192
+!i10e 25
+!i10f 100
+cModel Technology
+Z0 d/nfs/stak/users/biz/ECE474/hw7
+T_opt
+!s110 1528486506
+VH^A8L7ja3KLhCigeGho3I0
+04 2 4 work tb fast 0
+=1-ecb1d72fa911-5b1ada69-dd180-698e
+o-quiet -auto_acc_if_foreign -work work
+Z1 tCvgOpt 0
+n@_opt
+OL;O;10.5;63
+R0
+vclock
+Z2 DXx6 sv_std 3 std 0 22 AD7iAPLo6nTIKk<N0eo=D3
+Z3 VDg1SIo80bB@j0V0VzS_@n1
+r1
+!s85 0
+31
+!i10b 1
+!s100 B[iVnjz@hb]]M[Y[SiBJH2
+IKOaH=`l@fQ0gcIOh6ZLh=3
+!s105 clock_sv_unit
+S1
+R0
+w1528491221
+8clock.sv
+Fclock.sv
+L0 9
+Z4 OL;L;10.5;63
+Z5 !s108 1528519888.000000
+Z6 !s107 tb.sv|sep_to_two.sv|selector.sv|decoder.sv|clock.sv|
+Z7 !s90 clock.sv|decoder.sv|selector.sv|sep_to_two.sv|tb.sv|
+!i113 0
+Z8 o-L mtiAvm -L mtiRnm -L mtiOvm -L mtiUvm -L mtiUPF -L infact
+R1
+vdecoder
+R2
+R3
+r1
+!s85 0
+31
+!i10b 1
+!s100 [T<dehQ0DlHmFZazMF^gh3
+Iz<0@hdUkL0MKHP`kCzJjc2
+!s105 decoder_sv_unit
+S1
+R0
+w1528460056
+8decoder.sv
+Fdecoder.sv
+L0 9
+R4
+R5
+R6
+R7
+!i113 0
+R8
+R1
+vselector
+R2
+R3
+r1
+!s85 0
+31
+!i10b 1
+!s100 cGE`o52V=P?c23E@Cz^152
+ISX78k1L5d?bX:<LMgoz@b3
+!s105 selector_sv_unit
+S1
+R0
+w1528460057
+8selector.sv
+Fselector.sv
+L0 9
+R4
+R5
+R6
+R7
+!i113 0
+R8
+R1
+vsep_to_twe
+R2
+R3
+r1
+!s85 0
+31
+!i10b 1
+!s100 L1kE1KgoPWVERm?0:VBIZ1
+ImRC;K8o48:L6SSN>P<=BX2
+!s105 sep_to_two_sv_unit
+S1
+R0
+w1528460075
+8sep_to_two.sv
+Fsep_to_two.sv
+L0 9
+R4
+R5
+R6
+R7
+!i113 0
+R8
+R1
+vseven_seg_display
+R2
+R3
+r1
+!s85 0
+31
+!i10b 1
+!s100 JmAjD]kicj2L];F4f_<UT3
+I9daF[V:^I7_[O<4EEEgFR0
+!s105 seven_seg_display_sv_unit
+S1
+R0
+w1528276150
+8seven_seg_display.sv
+Fseven_seg_display.sv
+L0 1
+R4
+!s108 1528276153.000000
+!s107 seven_seg_display.sv|
+!s90 seven_seg_display.sv|
+!i113 0
+R8
+R1
+vtb
+R2
+!s110 1528519888
+!i10b 1
+!s100 E?GN]@Y<IVkO:^bCM:b7T0
+I?;WzjB==g29LL8[LBL=LE3
+R3
+!s105 tb_sv_unit
+S1
+R0
+w1528488684
+8tb.sv
+Ftb.sv
+L0 10
+R4
+r1
+!s85 0
+31
+R5
+R6
+R7
+!i113 0
+R8
+R1
